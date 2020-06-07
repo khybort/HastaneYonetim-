@@ -1,0 +1,20 @@
+﻿<ul class="nav side-menu">
+    <li>
+        <a href="/"><i class="fa fa-home"></i> Menü </a>
+    </li>
+    <li><a href="@Url.Action("Index","Hastalar")"><i class="fa fa-edit"></i> Hasta</a></li>
+    <li><a href="@Url.Action("Index","Randevular")"><i class="fa fa-edit"></i> Randevu</a></li>
+    <li><a href="@Url.Action("Index","Doktorlar")"><i class="fa fa-edit"></i> Doktorlar</a></li>
+    <li> <a href="@Url.Action("Index","Hesap")"><i class="fa fa-edit"></i> Kullanıcılar </a> </li>
+
+    <li>
+        <a><i class="fa fa-bar-chart-o"></i> Rapor <span class="fa fa-chevron-down"></span></a>
+        <ul class="nav child_menu">
+            <li><a href="@Url.Action("GunlukRandevular","Raporlar")">Günlük Randevular</a></li>
+            <li><a href="@Url.Action("Randevular","Raporlar")">Randevular </a></li>
+            <li><a href="@Url.Action("Bakimlar","Raporlar")">Bakım </a></li>
+
+        </ul>
+    </li>
+</ul>
+

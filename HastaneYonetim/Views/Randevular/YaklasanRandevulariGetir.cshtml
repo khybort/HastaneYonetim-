@@ -1,0 +1,18 @@
+﻿@model IEnumerable<HastaneYonetim.Core.Models.Randevu>
+
+<table class="data table table-striped no-margin">
+    <tr>
+        <th>Hasta Adı</th>
+        <th>Tarih</th>
+        <th>Saat</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>@item.Patient.Name</td>
+        <td>@item.StartDateTime.ToString("MMM")-@item.StartDateTime.ToString("d ")-@item.StartDateTime.ToString("yyyy")</td>
+        <td>@item.StartDateTime.ToString("HH:mm")</td>
+    </tr>
+}
+
+</table>
